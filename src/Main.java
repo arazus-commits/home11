@@ -1,16 +1,16 @@
 class Homework {
     public static void main(String[] args) {
         int year2 = 2024;
-        task1(year2);
+        definitionYear(year2);
         int clientOS2 = 1;
         int clientDeviceYear = 2014;
         installApp(clientOS2, clientDeviceYear);
         int deliveryDistance = 70;
-        int totalDay = task3(deliveryDistance);
+        int totalDay = deliveryDays(deliveryDistance);
         System.out.println(totalDay);
     }
 
-    public static void task1(int year2) {
+    public static void definitionYear(int year2) {
         if (year2 < 1584) {
             System.out.println(", високосный год еще не был принят.");
         } else if ((year2 % 4 == 0 && year2 % 100 != 0) || year2 % 400 == 0) {
@@ -33,7 +33,7 @@ class Homework {
         }
     }
 
-    public static int task3(int deliveryDistance) {
+    public static int deliveryDays(int deliveryDistance) {
         int day = 0;
         if (deliveryDistance <= 20) {
             day += 1;
