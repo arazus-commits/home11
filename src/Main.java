@@ -1,9 +1,11 @@
+import java.time.LocalDate;
+
 class Homework {
     public static void main(String[] args) {
         int year2 = 2024;
         definitionYear(year2);
         int clientOS2 = 1;
-        int clientDeviceYear = 2014;
+        int clientDeviceYear = LocalDate.now().getYear();
         installApp(clientOS2, clientDeviceYear);
         int deliveryDistance = 70;
         int totalDay = deliveryDays(deliveryDistance);
