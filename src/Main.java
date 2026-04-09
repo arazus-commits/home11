@@ -4,7 +4,7 @@ class Homework {
         task1(year2);
         int clientOS2 = 1;
         int clientDeviceYear = 2014;
-        task2(clientOS2, clientDeviceYear);
+        installApp(clientOS2, clientDeviceYear);
         int deliveryDistance = 70;
         int totalDay = task3(deliveryDistance);
         System.out.println(totalDay);
@@ -20,7 +20,7 @@ class Homework {
         }
     }
 
-    public static void task2(int clientOS2, int clientDeviceYear) {
+    public static void installApp(int clientOS2, int clientDeviceYear) {
         if (clientOS2 == 1 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для Android по ссылке");
         } else if (clientOS2 == 1) {
