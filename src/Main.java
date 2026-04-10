@@ -5,7 +5,7 @@ class Homework {
         int year2 = 2024;
         definitionYear(year2);
         int clientOS2 = 1;
-        int clientDeviceYear = LocalDate.now().getYear();
+        int clientDeviceYear = 2020;
         installApp(clientOS2, clientDeviceYear);
         int deliveryDistance = 70;
         int totalDay = deliveryDays(deliveryDistance);
@@ -23,12 +23,12 @@ class Homework {
     }
 
     public static void installApp(int clientOS2, int clientDeviceYear) {
-        if (clientOS2 == 1 && clientDeviceYear >= 2015) {
+        if (clientOS2 == 1 && clientDeviceYear >= LocalDate.now().getYear()) {
             System.out.println("Установите версию приложения для Android по ссылке");
         } else if (clientOS2 == 1) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         }
-        if (clientOS2 == 0 && clientDeviceYear >= 2015) {
+        if (clientOS2 == 0 && clientDeviceYear >= LocalDate.now().getYear()) {
             System.out.println("Установите версию приложения для IOS по ссылке");
         } else if (clientOS2 == 0) {
             System.out.println("Установите облегченную версию приложения для IOS по ссылке");
